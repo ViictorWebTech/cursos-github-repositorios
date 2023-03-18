@@ -1,0 +1,114 @@
+Aula 1:
+Onde pode ser utilizado: 
+Data Science, 
+Machine Learning, 
+Desenvolvimento de Web e Aplicativos,
+Automações de Scripts,
+Fintechs...
+
+Comunidade:
+https://python.org.br/
+
+Aula 2:
+Instalar em:
+https://python.org
+
+Primeiro de todos os comandos:
+print("Hello World")
+
+Contas podem ser feitas de forma simples:
+5+2 
+7
+
+100-25
+75
+
+100*98
+9800
+
+4**2 (elevado ao quadrado)
+16
+
+28/3 + 5 - 2 (segue a linha de ordem matemática)
+12.3333333
+
+Aula 3:
+Biblioteca Padrão:
+
+Principais módulos:
+
+Serviços Genéricos de Sistema Operacional => os, time
+
+Serviços de Tempo de Execução Python => sys
+
+Módulos Matemáticos e Numéricos => math, statistics
+
+Protocolo de Internet e Suporte => urllib, cgi
+
+Serviços de Processamento de Texto => re
+
+Comunicação em Rede e Interprocesso => socket
+
+Persistência de Dados => picke.
+
+Exercícios:
+import string => importa a biblioteca de caracteres
+string.ascii_lowercase => mostra o alfabeto minúsculo
+string,ascii_uppercase => mostra o alfabeto maiúsculo
+string.digits => mostra de 0 a 9 como caracteres
+
+from datetime import date => importa a biblioteca de datas
+hoje = date.today() => variável hoje recebe a data de hoje
+nascimento = date(2007, 2, 5) => variável nascimento recebe minha data de nascimento
+idade = hoje - nascimento => variável idade calcula quantos dias são de hoje até o dia q nasci
+idade.days => mostra a idade em dias sem comando a mais
+
+import statistics => importa a biblioteca de estatíticas
+data = [8, 9, 1.25, 0.25, 7, 1.25, 10] => variável data recebe esses números
+statistics.mean(data) => calcula a média dos números
+statistics.median(data) => calcula a mediana dos números
+statistics.variance(data) => calcula a variança dos números
+
+import random => importa a biblioteca de sorteio
+random.choice(['Julia', 'Ana', 'Maria', 'Renata']) => sorteia algo aleatório da lista
+random.sample(range(100), 10) => escolhe 10 números até 100
+random.random() => sorteia um número decimal aleatório
+random.randrange(6) => escolhe um número aleatório até 6
+
+import math => importa a biblioteca de matemática
+math.exp(1) => calcula o exponencial de 1
+math.pi => apresenta o numero pi
+math.factorial(10) => calcula o fatorial de 10
+
+Aula 4:
+
+O que é prompt de comandos?
+É utilizado para realizar funcões administrativas avançadas.
+
+Comandos Básicos:
+dir => Lista as pastas existentes;
+cd => O camino da pasta que se deseja acessar
+md(make directory) => Cria um novo diretório
+
+Verfiicar se ta instalado o python:
+python => da a versão instalada
+
+Criar um diretório:
+python3 -m venv tutorial-env
+
+Ativar o ambiente virtual:
+tutorial-env\Scripts\activate.bat
+
+Instalação de Pacotes:
+usar o pip para instalar
+python -m pip install pandas => utilizado em ciencia de dados
+
+Desinstalar Pacotes:
+pip unistall SciPy => desinstalar o pacote SciPy
+
+Outras funções pip:
+pip show => Mostra detalhes do pacote
+pip list => lista os pacotes existentes
+
+Desativar o Ambiente Virtual:
+deactivate
