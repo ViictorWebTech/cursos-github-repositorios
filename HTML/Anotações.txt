@@ -1,0 +1,188 @@
+Mídias:
+
+Tag audio:
+<audio> 
+	<source src="nomearquivo.mp3"/>
+	 Seu navegador não tem suporte para este áudio
+</audio>
+
+
+Opcionais:
+<audio auto play controls> 
+	<source src="nomearquivo.mp3"/> 
+	Seu navegador não tem suporte para este áudio
+</audio>
+
+
+auto play => inicia automaticamente ao abrir o site
+controls => disponibiliza o controle da mídida para o usuário
+
+
+Tag vídeo:
+<video controls> 
+	<source src="nomevideo.mp4"/> 
+	<source src="nomevideo.webm"/> 
+	Seu navegador não tem suporte a vídeo 
+</video>
+
+
+=> Se não rodar .mp4 passará para .webm
+
+
+Opcionais:
+.mp4
+.webm
+
+
+Tag track:
+<video controls> 
+	<source src="nomevideo.mp4"/> 
+	<track src="arquivolegenda.vtt" kind="captions" srclang="en" />	
+	<track default src="leganda-pt-br.vtt" kind="captions" srclang="pt-br" />
+	Seu navegador não tem suporte a vídeo 
+</video>
+
+
+default => define qual deve ser a legenda padrão
+
+kind => captions (falas)
+kind => chapters (define partes, minuto 1 tal coisa, minuto 2 outra coisa - descrição para deficientes visuais)
+kind => metadata (para search otimization)
+
+
+Tag iframe:
+<iframe src="linkembed" </iframe>
+
+
+title => pode ser usado em várias tags para aparecer alguma mensagem no ponteiro do mouse quando estiver em cima de uma imagem por exemplo
+
+
+Box Shadow CSS Generator
+
+
+<header> cabeçalho
+
+
+<main> => conteudo principal da página
+
+
+<footer> => rodapé
+
+
+<section> => sessões com informações de um único contexto que tenha haver com o tema principal (para coisa 			 genérica use div normal)
+
+
+<aside> => sessão só que com conteúdo não tão importante, que sejam talvez de outros contextos ou assuntos
+
+
+<nav> => usado para abraçar listas, ajuda na semântica da navegação por menus
+
+
+Web Scraping é pegar as informações de outros sites e indexar em algum lugar
+
+
+tag datalis:
+<input list="browsers" type="search" name="search" />
+<datalist id="browsers">
+	<option>Google Chrome</option>
+	<option>Mozila Firefox</option>
+	<option>Microsoft Edge</option>
+	<option>Safari</option>
+	<option>Opera</option>
+</datalist>
+
+
+tag kbd:
+para dar destaque em parte de parágrafos que podem representar comandos de teclado como em:
+
+<p>Para copiar esta informação, pressione <kbd>CTRL</kbd> + <kbd>C</kbd></p>
+
+
+tag code:
+para dar destaque em parte de parágrafos que podem representar comandos que podem ser CSS como em:
+
+<p>Para trocar o fundo de um elemento, utilize <code>backgroun-color</code></p>
+
+<pre>
+	<code>
+
+	elemento {
+background-color: red;
+	}	
+	</code>
+</pre>
+
+SOMENTE REPRESENTA O QUE É O CÓDIGO DEIXANDO MONOSPACE
+
+
+canvas => para criar gráficos e animações interativias
+
+codepen.io/ => testar os códigos de canvas
+
+
+Formulários:
+
+<label for="name">
+	Name:
+	<input type="text" id="name" name="name" autofocus>
+</label>
+
+autofocus => ao carregar a página a caixa do formulário que tiver o autofocus ja estará selecionada para digitar 
+
+<label for="email">
+	Email:
+	<input placeholder="Ex: meuemail@gmail.com" type="email" id="email" name="email">
+</label>
+
+placeholder => ficará aparecendo dentro da caixa de texto antes que o usuário comece a digitar
+
+<fieldset>
+<label for="name">
+	Name:
+	<input type="text" id="name" name="name" autofocus>
+</label>
+<label for="email">
+	Email:
+	<input placeholder="Ex: meuemail@gmail.com" type="email" id="email" name="email">
+</label>
+</fieldset>
+
+fieldset => cria uma caixa ao redor das caixas do formulário
+
+
+<fieldset>
+	<legend>Observações</legend>
+	<textarea maxlength="10" name="observation" id="observation" cols="30" rows="5"></textarea>
+</fieldset>
+
+maxlength => limita o máximo de caracteres que podem ser inseridos (somente para textarea)
+
+minlength => limita o minímo de caracteres (pode ser usado em todos os inputs)
+
+
+Os campos input não precisam mais estarem dentro da tag <form></form> => 
+podemos fazer dessa forma:
+
+
+<form method="get" action="" id="form"></form> => tem um id que será referenciado
+<fieldset>
+<label for="name">
+	Name:
+	<input type="text" id="name" name="name" autofocus form="form">
+</label>
+<label for="email">
+	Email:
+	<input placeholder="Ex: meuemail@gmail.com" type="email" id="email" name="email" form="form">
+</label>
+</fieldset> 
+<button type="reset" form="form">Limpar</button>
+<button type="submit" form="form">Enviar</button>
+
+
+form="form" => dentro desse form do final dizemos de qual formulário esse input faz parte
+
+
+contenteditable:
+<h1 contenteditable>Altere o título para o que você quiser</h1>
+
+com isso a pessoa pode simplesmente clicar no título na página e editar, pode ser usado para pessoas que desejam pegar sites e editarem para seu uso
